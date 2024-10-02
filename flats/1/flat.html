@@ -18,28 +18,35 @@
     <!-- Навигация -->
     <nav class="navigation">
         <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="flats.html">Квартиры</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="../../index.html">Главная</a></li>
+            <li><a href="../../flats.html">Квартиры</a></li>
+            <li><a href="../../contacts.html">Контакты</a></li>
         </ul>
     </nav>
 
-    <!-- Квартира -->
-    <section class="apartment">
-        <div class="apartment-photo"></div>
-        <div class="apartment-info">
-            <h3>Аппартаменты</h3>
-            <p>2 600 Р</p>
-            <p>1-комн</p>
-            <p>Промышленный район ул. Шпаковская 86/2</p>
-            <a href="flats/1/flat.html" class="btn-more">Подробнее</a>
-        </div>
+    <!-- Галерея: две фотографии в ряд -->
+    <section class="gallery-row">
+        <img src="photo1.jpg" alt="Фото 1">
+        <img src="photo2.jpg" alt="Фото 2">
     </section>
-    
+
+    <!-- Одиночная фотография -->
+    <section class="gallery-single">
+        <img src="photo3.jpg" alt="Фото 3">
+    </section>
+
     <!-- Футер -->
     <footer class="footer">
         <p>Арендуйте квартиру легко, быстро и доступно</p>
     </footer>
+    
+    <!-- Карта -->
+    <section class="map">
+        <div id="map"></div>
+    </section>
+    
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="map.js" type="text/javascript"></script>
 
 </body>
 </html>
