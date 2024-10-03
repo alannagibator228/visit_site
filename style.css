@@ -1,0 +1,133 @@
+/* Подключение шрифта Jura */
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jura', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Шапка */
+.shapka {
+    width: 100%;
+    height: 37.5vw;
+    background: url('shapka.png') center calc(-12.2777vw) / cover no-repeat; /* Поднимаем фон на 50px */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 25px 0 0 50px;
+}
+
+.shapka h1 {
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    margin: 0;
+}
+
+@media (max-width: 1300px) {
+    .shapka h1 {
+        opacity: 0; /* Делаем текст прозрачным */
+        visibility: hidden; /* Полностью скрываем элемент */
+    }
+}
+
+/* Навигация */
+.navigation {
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navigation li {
+    margin-right: 60px;
+}
+
+.navigation li:last-child {
+    margin-right: 0;
+}
+
+.navigation a {
+    display: inline-block;
+    width: 260px;
+    height: 60px;
+    background-color: #d9d9d9;
+    color: black;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bold;
+    font-size: 48px;
+    text-decoration: none;
+    border-radius: 9px;
+}
+
+/* О нас */
+.about {
+    width: 100%;
+    height: 720px;
+    background-color: white;
+    display: flex;
+
+}
+
+.about h2 {
+    font-weight: bold;
+    font-size: 64px;
+    color: black;
+    margin: 76px 82px 0 17%;
+}
+
+.about p {
+    width: 39.5%;
+    font-weight: bold;
+    font-size: 32px;
+    color: black;
+    margin: 73px 17% 0 0;
+}
+
+/* Футер */
+.footer {
+    width: 100%;
+    height: 90px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    font-weight: bold;
+    font-size: 48px;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+
+/* Галерея с двумя изображениями */
+.gallery-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Расстояние между изображениями */
+    margin: 0 auto;
+    padding: 20px 0; /* Отступы сверху и снизу для блока галереи */
+}
+
+.gallery-row img {
+    width: 500px;
+    height: 400px;
+    object-fit: cover; /* Гарантирует, что изображение будет обрезано при необходимости для соответствия заданным размерам */
+}
+
