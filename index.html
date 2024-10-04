@@ -15,17 +15,21 @@
         </div>
     </header>
     <script>
-        // Получаем элемент шапки
-        const header = document.querySelector('.shapka');
-        const vw = window.innerWidth / 100;
+        document.addEventListener('scroll', function() {
+    // Получаем текущую прокрутку
+    var scrollY = window.scrollY || document.documentElement.scrollTop;
 
-        // Отслеживаем прокрутку
-        window.addEventListener('scroll', () => {
-            const scrollY = window.scrollY;
-            
-            // Меняем позицию фона в зависимости от прокрутки
-            header.style.backgroundPositionY = `${-12.2777*vw + scrollY * 0.5}px`;
-        });
+    // Получаем элемент шапки
+    const header = document.querySelector('.shapka');
+    const vw = window.innerWidth / 100;
+
+    // Меняем позицию фона в зависимости от прокрутки
+    header.style.backgroundPositionY = `${-12.2777 * vw + scrollY * 0.5}px`;
+
+    // Логируем текущее значение прокрутки для отладки
+    console.log(scrollY);
+}, { passive: true });
+
     </script>
 
     <!-- Навигация -->
