@@ -1,58 +1,38 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Квартиры посуточно в Ставрополе</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Посуточно Ставрополь</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Шапка -->
-    <header class="shapka">
-        <div class="shapka-content">
-            <h1>Квартиры посуточно<br>и по часам<br>в Ставрополе</h1>
-        </div>
-    </header>
-    <script>
-        // Получаем элемент шапки
-        const header = document.querySelector('.shapka');
-        const vw = window.innerWidth / 100;
+  <header class="header">
+    <img src="shapka.png" alt="Шапка">
+    <div class="overlay">
+      <h1>Квартиры посуточно<br>и по часам<br>в Ставрополе</h1>
+    </div>
+  </header>
+  
+  <script>
+    // Получаем элемент изображения
+    const image = document.querySelector('.header img');
 
-        // Отслеживаем прокрутку
-        window.addEventListener('scroll', () => {
-            const scrollY = window.scrollY;
-            
-            // Меняем позицию фона в зависимости от прокрутки
-            header.style.backgroundPositionY = `${-12.2777*vw + scrollY * 0.5}px`;
-        });
-    </script>
+    // Отслеживаем прокрутку
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+
+      // Меняем позицию изображения в зависимости от прокрутки
+      image.style.transform = `translate(-50%, ${scrollY * 0.5}px)`;
+    });
+  </script>
+    
     <p>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>
     rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>
     rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>
     rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>
     rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br>rgrgergergr<br></p>
-
-    <!-- Навигация -->
-    <!--
-    <nav class="navigation">
-        <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="flats.html">Квартиры</a></li>
-            <li><a href="contact.html">Контакты</a></li>
-        </ul>
-    </nav>
-
-    
-    <section class="about">
-        <h2>О нас:</h2>
-        <p>Мы предоставляем квартиры по посуточной и почасовой аренде в Ставрополе, уделяя особое внимание чистоте, комфорту и доступности. В нашем арсенале — современные люксовые квартиры и уютные варианты на любой бюджет, расположенные по всему городу. Независимо от цели вашего визита — будь то отдых или работа — мы гарантируем высокое качество сервиса и абсолютную надежность. Наши квартиры — это пространство, где вам будет приятно и безопасно находиться.</p>
-    </section>
-
-    
-    <footer class="footer">
-        <p>арендуйте квартиру легко, быстро и доступно</p>
-    </footer>-->
 
 </body>
 </html>
