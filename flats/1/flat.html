@@ -8,21 +8,37 @@
 </head>
 <body>
 
-    <!-- Шапка -->
-    <header class="shapka">
-        <div class="shapka-content">
-            <h1>Квартиры посуточно<br>и по часам<br>в Ставрополе</h1>
-        </div>
-    </header>
+    <header class="header">
+    <img src="../../shapka.png" alt="Шапка">
+    <div class="overlay">
+      <h1>Квартиры посуточно<br>и по часам<br>в Ставрополе</h1>
+    </div>
+  </header>
+  
+  <script>
+    // Получаем элемент изображения
+    const image = document.querySelector('.header img');
 
-    <!-- Навигация -->
-    <nav class="navigation">
-        <ul>
-            <li><a href="../../index.html">Главная</a></li>
-            <li><a href="../../flats.html">Квартиры</a></li>
-            <li><a href="../../contact.html">Контакты</a></li>
-        </ul>
-    </nav>
+    // Отслеживаем прокрутку
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+
+      // Меняем позицию изображения в зависимости от прокрутки
+      image.style.transform = `translate(-50%, ${scrollY * 0.5}px)`;
+    });
+  </script>
+  
+  <nav class="navigation">
+    <div class="nav-button">
+      <a href="../../index.html"><h1>главная</h1></a>
+    </div>
+    <div class="nav-button active">
+      <a href="../../flats.html"><h1>каталог</h1></a>
+    </div>
+    <div class="nav-button">
+      <a href="../../contact.html"><h1>контакты</h1></a>
+    </div>
+  </nav>
 
     <!-- Галерея: две фотографии в ряд -->
     <section class="gallery-row">
