@@ -7,7 +7,14 @@
     }
     
     h1 {
-      font-weight: regular;
+      font-weight: 400;
+      margin: 0;
+      line-height: 1.2;
+      font-family: 'Jura';
+    }
+    
+    h2 {
+      font-weight: bold;
       margin: 0;
       line-height: 1.2;
       font-family: 'Jura';
@@ -66,7 +73,14 @@
     
     .nav-button.active {
       border-bottom-color: black; /* Сплошная подводка для активной страницы */
-      }
+    }
+      
+    .content-block {
+      display: flex;
+      justify-content: center;
+      background-color: white;
+      box-sizing: border-box;
+    }
 
     @media screen and (max-width: 960px) {
       .header {
@@ -88,6 +102,10 @@
         font-size: 5vw;
       }
       
+      h2 {
+        font-size: 4.375vw;
+      }
+      
       .navigation {
       height: 6.9vw;
       }
@@ -95,6 +113,11 @@
       .nav-button {
       height: 6.9vw;
       width: 30vw;
+      }
+      
+      .text-block {
+      width: 81.25vw;
+      margin: 9.375vw;
       }
     }
 
@@ -118,6 +141,10 @@
         font-size: 48px;
       }
       
+      h2 {
+        font-size: 42px;
+      }
+      
       .navigation {
         height: 66px;
       }
@@ -125,5 +152,10 @@
       .nav-button {
         width: 264px;
         height: 96px; /* Высота кнопок для экранов шире 960px */
+      }
+      
+      .text-block {
+      width: 780px;
+      margin: 90px;
       }
     }
