@@ -279,12 +279,16 @@
       width: 100vw;
       padding: 9.375vw 9.375vw 0 9.375vw;
       }
-    }
-    
+      
       #map {
         width: 100vw; 
         height: 50vw;    
       }
+      #contacts-margin-top {
+        margin-top: 9.375vw;
+      }
+    }
+      
 
     @media screen and (min-width: 960px) {
       .header {
@@ -375,5 +379,8 @@
         width: 960px; 
         height: 480px;    
       }
-
+      
+      #contacts-margin-top {
+        margin-top: 90px;
+      }
     }
