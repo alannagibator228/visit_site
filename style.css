@@ -152,6 +152,17 @@
       background-color: #00415C;
       color: white;
     }
+    
+    .galery {
+        width: 100vw;
+    }
+    
+    .photo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width:100vw;
+    }
 
 
     @media screen and (max-width: 959px) {
@@ -225,6 +236,16 @@
         height: 5.625vw;
         border-radius: 1.5625vw;
       }
+      
+      .photo img {
+        width: 43.75vw;
+        height: 43.75vw;
+        margin:3.125vw 3.125vw 3.125vw 3.125vw;
+      }
+      
+      .galery {
+        margin: 9.375vw 0 9.375vw 0;
+      }
     }
 
     @media screen and (min-width: 960px) {
@@ -295,5 +316,15 @@
         width: 243px;
         height: 54px;
         border-radius: 15px;
+      }
+      
+      .photo img {
+        width: 420px;
+        height: 420px;
+        margin:40px 40px 40px 40px;
+      }
+      
+      .galery {
+        margin: 90px 0 90px 0;
       }
     }
