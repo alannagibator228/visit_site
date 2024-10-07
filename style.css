@@ -20,6 +20,13 @@
       font-family: 'Jura';
     }
     
+    h3 {
+      font-weight: 400;
+      margin: 0;
+      line-height: 1.2;
+      font-family: 'Jura';
+    }
+    
     a {
       text-decoration: none; /* Убирает подчеркивание */
       color: inherit; /* Унаследовать цвет текста от родительского элемента */
@@ -81,6 +88,40 @@
       background-color: white;
       box-sizing: border-box;
     }
+    .text-block {
+      box-sizing: border-box;
+      color: black;
+    }
+    .text-block.helper {
+      color: white;
+      background-color: #333;
+    }
+    
+    .text-block.helper a {
+      color: #018ECA;
+      text-decoration: underline;
+    }
+    .text-block.helper a:visited {
+      color: #9900FF;
+    }
+    .text-block.helper a:hover {
+      color: #FF4400;
+    }
+    
+    footer {
+      width: 100vw;
+      background-color: white;
+    }
+    .end-text {
+      display: flex;
+      width: 100vw;
+      background-color: black;
+      color: white;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+
 
     @media screen and (max-width: 960px) {
       .header {
@@ -106,18 +147,27 @@
         font-size: 4.375vw;
       }
       
+      h3 {
+        font-size: 3.75vw;
+      }
+      
       .navigation {
-      height: 6.9vw;
+        height: 6.9vw;
       }
       
       .nav-button {
-      height: 6.9vw;
-      width: 30vw;
+        height: 6.9vw;
+        width: 30vw;
       }
       
       .text-block {
-      width: 81.25vw;
-      margin: 9.375vw;
+        width: 100vw;
+        padding: 9.375vw;
+      }
+      
+      .end-text {
+        margin-top: 9.375vw;
+        height: 9.375vw;
       }
     }
 
@@ -145,17 +195,26 @@
         font-size: 42px;
       }
       
+      h3 {
+        font-size: 36px;
+      }
+      
       .navigation {
         height: 66px;
       }
       
       .nav-button {
         width: 264px;
-        height: 96px; /* Высота кнопок для экранов шире 960px */
+        height: 66px; /* Высота кнопок для экранов шире 960px */
       }
       
       .text-block {
-      width: 780px;
-      margin: 90px;
+      width: 960px;
+      padding: 90px;
+      }
+      
+      .end-text {
+        margin-top: 90px;
+        height: 90px;
       }
     }
