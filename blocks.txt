@@ -45,13 +45,7 @@
     <!-- Галерея: две фотографии в ряд -->
     <section class="gallery-row">
         <img src="photo1.jpg" alt="Фото 1">
-        <img src="photo2.jpg" alt="Фото 2">
-    </section>
 
-    <!-- Одиночная фотография -->
-    <section class="gallery-single">
-        <img src="photo3.jpg" alt="Фото 3">
-    </section>
 
     <!-- Карта -->
     <section class="map">
