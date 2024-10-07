@@ -1,11 +1,11 @@
 ymaps.ready(function () {
             var myMap = new ymaps.Map("map", {
-                center: [45.0428, 41.9734],
+                center: [45.035942, 41.949204],
                 zoom: 12
             });
-            var myPlacemark = new ymaps.Placemark([45.0428, 41.9734], {
+            var myPlacemark = new ymaps.Placemark([45.035942, 41.949204], {
                 hintContent: 'Квартира',
-                balloonContent: 'ул. Шпаковская 86/2'
+                balloonContent: 'ул. Мира 367/1'
             });
             myMap.geoObjects.add(myPlacemark);
         });

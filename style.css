@@ -163,6 +163,24 @@
       align-items: center;
       width:100vw;
     }
+    
+    .description {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width:100vw;
+    }
+    
+    .d-text {
+      box-sizing: border-box;
+    }
+    
+    .map-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width:100vw;
+    }
 
 
     @media screen and (max-width: 959px) {
@@ -246,7 +264,17 @@
       .galery {
         margin: 9.375vw 0 9.375vw 0;
       }
+      
+      .d-text {
+      width: 100vw;
+      padding: 9.375vw 9.375vw 0 9.375vw;
+      }
     }
+    
+      #map {
+        width: 100vw; 
+        height: 50vw;    
+      }
 
     @media screen and (min-width: 960px) {
       .header {
@@ -327,4 +355,15 @@
       .galery {
         margin: 90px 0 90px 0;
       }
+      
+      .d-text {
+      width: 960px;
+      padding: 90px 90px 0 90px;
+      }
+      
+      #map {
+        width: 960px; 
+        height: 480px;    
+      }
+
     }

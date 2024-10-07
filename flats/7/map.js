@@ -1,11 +1,11 @@
 ymaps.ready(function () {
             var myMap = new ymaps.Map("map", {
-                center: [45.0428, 41.9734],
+                center: [45.037005, 41.939978],
                 zoom: 12
             });
-            var myPlacemark = new ymaps.Placemark([45.0428, 41.9734], {
+            var myPlacemark = new ymaps.Placemark([45.037005, 41.939978], {
                 hintContent: 'Квартира',
-                balloonContent: 'ул. Шпаковская 86/2'
+                balloonContent: 'ул. Ленина 369'
             });
             myMap.geoObjects.add(myPlacemark);
         });

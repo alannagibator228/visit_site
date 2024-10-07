@@ -1,11 +1,11 @@
 ymaps.ready(function () {
             var myMap = new ymaps.Map("map", {
-                center: [45.0428, 41.9734],
+                center: [45.015722, 41.925560],
                 zoom: 12
             });
-            var myPlacemark = new ymaps.Placemark([45.0428, 41.9734], {
+            var myPlacemark = new ymaps.Placemark([45.015722, 41.925560], {
                 hintContent: 'Квартира',
-                balloonContent: 'ул. Шпаковская 86/2'
+                balloonContent: 'ул. 50 лет ВЛКСМ 8А/1'
             });
             myMap.geoObjects.add(myPlacemark);
         });
