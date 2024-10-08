@@ -16,18 +16,7 @@
     </div>
   </header>
   
-  <script>
-    // Получаем элемент изображения
-    const image = document.querySelector('.header img');
-
-    // Отслеживаем прокрутку
-    window.addEventListener('scroll', () => {
-      const scrollY = window.scrollY;
-
-      // Меняем позицию изображения в зависимости от прокрутки
-      image.style.transform = `translate(-50%, ${scrollY * 0.5}px)`;
-    });
-  </script>
+  <script src="script.js"></script>
   
   <nav class="navigation">
     <div class="nav-button active">
