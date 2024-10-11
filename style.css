@@ -136,6 +136,10 @@
       background-color: #eee;
     }
     
+    .card img {
+      background-color: #ccc;
+    }
+    
     .card-text{
       display: flex;
       flex-direction: column;
